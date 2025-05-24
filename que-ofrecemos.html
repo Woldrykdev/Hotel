@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qué ofrecemos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/icon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-header">
+        <a href="index.html" class="logo">
+          <img src="img/logoh.webp" alt="Logo Hotel Saladillo" style="width: 100px; height: auto;">
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          <span class="fas fa-bars"></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="que-ofrecemos.html" class="active">Qué ofrecemos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="habitaciones seccion-principal" data-aos="fade-in">
+    <h1>Sector "R"</h1>
+    <div class="contenedor-servicios">
+      <div class="habitacion" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Habitación Single</h3>
+        <p>Estilo moderno en un espacio íntimo. Ideal para una estadía cómoda y tranquila.</p>
+      </div>
+      <div class="habitacion" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Habitación Doble</h3>
+        <p>Diseño actual y confort para dos. Espacio funcional con detalles renovados.</p>
+      </div>
+      <div class="habitacion" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Habitación Triple</h3>
+        <p>Ambiente moderno y amplio. Pensada para compartir sin perder comodidad.</p>
+      </div>      
+    </div>
+  </section>
+
+  <section class="habitaciones seccion-principal" data-aos="fade-in">
+    <h1>Sector Standard</h1>
+    <div class="contenedor-servicios">  
+      <div class="habitacion" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Habitación Single</h3>
+        <p>Compacta y funcional. Perfecta para quienes buscan privacidad y comodidad.</p>
+      </div>
+      <div class="habitacion" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Habitación Doble</h3>
+        <p>Confort para dos. Ambientes cálidos y bien equipados para tu descanso.</p>
+      </div>
+      <div class="habitacion" data-aos="zoom-in" data-aos-delay="300">
+        <h3>Habitación Triple</h3>
+        <p>Espacio para compartir. Ideal para pequeños grupos o familias.</p>
+      </div>
+      <div class="habitacion" data-aos="zoom-in" data-aos-delay="400">
+        <h3>Habitación Cuádruple</h3>
+        <p>Amplia y versátil. Comodidad total para grupos o familias numerosas.</p>
+      </div>      
+    </div>
+  </section>
+
+  <section class="comodidades seccion-principal" data-aos="fade-up">
+    <h2>Comodidades y Servicios</h2>
+    <ul class="lista-comodidades">
+      <li><i class="fas fa-mug-hot"></i>Desayuno buffet incluido</li>
+      <li><i class="fas fa-parking"></i>Estacionamiento cubierto</li>
+      <li><i class="fas fa-wifi"></i>Wi-Fi gratuito en todas las habitaciones</li>
+      <li><i class="fas fa-snowflake"></i>Aire acondicionado y calefacción</li>
+      <li><i class="fas fa-tv"></i>TV LCD</li>
+      <li><i class="fas fa-user-check"></i>Atención personalizada</li>
+    </ul>
+  </section>
+
+  <section class="instalaciones seccion-principal" data-aos="fade-up">
+    <h2>Sector Standard</h2>
+    <div class="galeria-instalaciones">
+      <img src="img/st/1.jpeg" alt="Lobby" onclick="openLightbox(this)" />
+      <img src="img/st/2.jpeg" alt="Pasillo" onclick="openLightbox(this)" />
+      <img src="img/st/3.jpeg" alt="Baño" onclick="openLightbox(this)" />
+      <img src="img/st/4.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/st/5.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/st/6.jpeg" alt="Baño" onclick="openLightbox(this)" />
+      <img src="img/st/7.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/st/8.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+    </div>
+  </section>
+
+  <section class="instalaciones seccion-principal" data-aos="fade-up">
+    <h2>Sector R</h2>
+    <div class="galeria-instalaciones">
+      <img src="img/sr/1.jpeg" alt="Lobby" onclick="openLightbox(this)" />
+      <img src="img/sr/2.jpeg" alt="Pasillo" onclick="openLightbox(this)" />
+      <img src="img/sr/3.jpeg" alt="Baño" onclick="openLightbox(this)" />
+      <img src="img/sr/4.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/sr/5.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/sr/6.jpeg" alt="Baño" onclick="openLightbox(this)" />
+      <img src="img/sr/7.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/sr/8.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Hotel Saladillo | Todos los derechos reservados.</p>
+</footer>
+
+<!-- Lightbox para ver imágenes en grande -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Instalación en grande" />
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+AOS.init({ duration: 900, easing: 'ease-in-out', once: true });
+</script>
+</body>
+</html>

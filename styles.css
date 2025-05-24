@@ -1,0 +1,489 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+    color: #2c2c2c;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+  }
+  
+  header {
+    background-color: #080404;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo {
+    color: #f0c03c;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+  }
+  
+  .navbar-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+  }
+  
+  .nav-links {
+    width: 500px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #f0f0f0;
+    transition: color 0.3s;
+    font-size: 1.1rem;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    color: #f0c03c;
+    border-bottom: 2px solid #f0c03c;
+    opacity: 1;
+  }
+  
+  .bienvenida {
+    background: url('img/hotel2.jpg') center center/cover no-repeat;
+    color: #000;
+    text-align: center;
+    padding: 120px 20px 100px 20px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 8px 32px #0006;
+  }
+  
+  .bienvenida .contenido h1 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .bienvenida .contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  
+  .caracteristicas, .servicios, .ubicacion, .contacto {
+    padding: 60px 20px;
+    background: #ffffff;
+    border-radius: 32px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  }
+  
+  .caracteristicas h2, .servicios h1, .ubicacion h2, .contacto h1 {
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  
+  .contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  
+  .servicio, .habitacion {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 24px 16px 16px 16px;
+    width: 260px;
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  
+  .servicio:hover, .habitacion:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transform: translateY(-4px) scale(1.02);
+  }
+  
+  .servicio img, .habitacion img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px #0004;
+  }
+  
+  .ubicacion iframe {
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #0006;
+    margin-top: 24px;
+  }
+  
+  footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 32px 10px 20px 10px;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -2px 16px #0004;
+    margin-top: 60px;
+  }
+  
+
+  
+  .titulo-contacto {
+    color: #000;
+    font-size: 2.2rem;
+    margin-bottom: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .subtitulo-contacto {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+  
+  .contacto.seccion-principal {
+    background: #ffffff;
+    border-radius: 32px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.1);
+    padding: 60px 20px;
+    max-width: 700px;
+  }
+  
+  .informacion-contacto {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 24px 18px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: #2c2c2c;
+    margin-bottom: 32px;
+  }
+  
+  .informacion-contacto a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .informacion-contacto a:hover {
+    color: #333;
+  }
+  
+  .ubicacion-mapa iframe {
+    width: 100%;
+    height: 320px;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #0006;
+    border: none;
+    margin-top: 18px;
+  }
+  
+  [data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+  }
+  
+  @media (max-width: 900px) {
+    .navbar-header {
+      position: relative;
+    }
+    .menu-toggle {
+      display: block !important;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 2000;
+      background: #181818;
+      color: #f0c03c;
+      border-radius: 8px;
+      padding: 8px 12px;
+      border: none;
+      font-size: 2.2rem;
+      box-shadow: 0 2px 8px #0004;
+    }
+    .nav-links {
+      position: fixed;
+      top: 0; right: 0;
+      height: 100vh;
+      width: 220px;
+      background: #181818;
+      box-shadow: -2px 0 16px #0008;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 80px 24px 24px 24px;
+      gap: 24px;
+      transform: translateX(100%);
+      transition: transform 0.3s cubic-bezier(.7,0,.18,1);
+      z-index: 3000;
+      display: flex;
+    }
+    .nav-links.open {
+      transform: translateX(0);
+    }
+    .navbar .logo {
+      z-index: 1002;
+    }
+    .navbar {
+      position: relative;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .bienvenida .contenido h1 {
+      font-size: 2rem;
+    }
+    .caracteristicas, .servicios, .ubicacion, .contacto {
+      padding: 30px 5px;
+      border-radius: 18px;
+    }
+    .bienvenida {
+      padding: 60px 10px 40px 10px;
+      border-radius: 0 0 18px 18px;
+    }
+    footer {
+      border-radius: 0 0 18px 18px;
+      padding: 18px 5px 10px 5px;
+    }
+    .nav-links {
+      width: 100vw;
+      padding: 80px 10vw 24px 10vw;
+    }
+    .menu-toggle {
+      z-index: 999;
+      display: block;
+    }
+  }
+  
+  .img-fachada {
+    margin-top: 32px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #0006;
+  }
+  
+  .galeria-instalaciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  .galeria-instalaciones img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0004;
+    background: #222;
+  }
+  
+  .info-importante {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 60px auto 0 auto;
+    padding: 0 20px;
+  }
+  .info-bloque {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 32px 24px;
+    color: #2c2c2c;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .info-bloque h2 {
+    color: #000;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+  }
+  
+  .lista-comodidades {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    justify-content: center;
+    max-width: 1240px;
+    margin: 24px auto 0 auto;
+    justify-content: center;
+    max-width: 1240px;
+    margin: 24px auto 0 auto;
+  }
+  .lista-comodidades li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    color: #2c2c2c;
+    border-radius: 12px;
+    padding: 18px 18px;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    margin-bottom: 0;
+    font-size: 1.08rem;
+    min-height: 60px;
+    transition: all 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .lista-comodidades li i {
+    color: #f0c03c;
+    font-size: 1.3em;
+  }
+  .lista-comodidades li:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 1100px) {
+    .lista-comodidades {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .lista-comodidades {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .seccion-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    border-radius: 32px;
+    background: #ffffff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+  }
+  
+  @media (max-width: 700px) {
+    .seccion-principal {
+      padding: 30px 5px;
+      border-radius: 18px;
+    }
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+    cursor: zoom-out;
+  }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px #000a;
+    background: #222;
+    animation: lightboxIn 0.25s;
+  }
+  @keyframes lightboxIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f0c03c;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 1002;
+    padding: 8px;
+  }
+  .menu-toggle.open {
+    color: #fff;
+  }
+  
+  .navbar-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .mapa-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #0006;
+    margin-top: 24px;
+  }
+  .mapa-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 18px;
+  }
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logoh.webp" type="image/webp">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  
+  </head>
+<body>
+
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-header">
+        <a href="index.html" class="logo">
+          <img src="img/logoh.webp" alt="Logo Hotel Saladillo" style="width: 100px; height: auto;">
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+          <span class="fas fa-bars"></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="que-ofrecemos.html">Qué ofrecemos</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="contacto seccion-principal" data-aos="fade-in">
+    <h1 class="titulo-contacto">Contacto</h1>
+    <div class="informacion-contacto" data-aos="fade-up" data-aos-delay="100">
+      <p><strong>Dirección:</strong> Calle B. Mitre 3116, (7260) Saladillo, Buenos Aires</p>
+      <p><strong>Email:</strong> <a href="mailto:saladillohotel@hotmail.com">saladillohotel@hotmail.com</a></p>
+      <p><strong>Teléfono:</strong> (02344) 45 0110</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5492344469457" target="_blank" rel="noopener">+5492344469457</a></p>
+    </div>
+
+    <h2 class="subtitulo-contacto" style="margin-top: 40px;">Ubicación</h2>
+    <div class="ubicacion-mapa" data-aos="fade-up" data-aos-delay="300">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12971.195715011638!2d-59.78978967559157!3d-35.63268312145049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bde0ef0adedf5d%3A0x30cab308f1e24363!2sHotel%20Saladillo!5e0!3m2!1ses-419!2sus!4v1747943550214!5m2!1ses-419!2sus"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Hotel Saladillo | Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
+</body>
+</html>
