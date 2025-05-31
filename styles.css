@@ -54,6 +54,7 @@
   .navbar-header {
     display: flex;
     align-items: center;
+    width: 100%;
   }
   
   .logo img {
@@ -327,6 +328,16 @@
     border-radius: 12px;
     box-shadow: 0 2px 8px #0004;
     background: #222;
+  }
+  
+  .galeria-img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0004;
+    background: #222;
+    display: block;
   }
   
   .info-importante {

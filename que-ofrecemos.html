@@ -117,28 +117,28 @@
   <section class="instalaciones seccion-principal" data-aos="fade-up">
     <h2>Sector Standard</h2>
     <div class="galeria-instalaciones">
-      <img src="img/st/1.jpeg" alt="Lobby" onclick="openLightbox(this)" />
-      <img src="img/st/2.jpeg" alt="Pasillo" onclick="openLightbox(this)" />
-      <img src="img/st/3.jpeg" alt="Baño" onclick="openLightbox(this)" />
-      <img src="img/st/4.jpeg" alt="Habitación" onclick="openLightbox(this)" />
-      <img src="img/st/5.jpeg" alt="Habitación" onclick="openLightbox(this)" />
-      <img src="img/st/6.jpeg" alt="Baño" onclick="openLightbox(this)" />
-      <img src="img/st/7.jpeg" alt="Habitación" onclick="openLightbox(this)" />
-      <img src="img/st/8.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/st/1.jpeg" alt="Lobby" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/st/2.jpeg" alt="Pasillo" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/st/3.jpeg" alt="Baño" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/st/4.jpeg" alt="Habitación" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/st/5.jpeg" alt="Habitación" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/st/6.jpeg" alt="Baño" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/st/7.jpeg" alt="Habitación" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/st/8.jpeg" alt="Habitación" onclick="openLightbox(this)" class="galeria-img" />
     </div>
   </section>
 
   <section class="instalaciones seccion-principal" data-aos="fade-up">
     <h2>Sector R</h2>
     <div class="galeria-instalaciones">
-      <img src="img/sr/1.jpeg" alt="Lobby" onclick="openLightbox(this)" />
-      <img src="img/sr/2.jpeg" alt="Pasillo" onclick="openLightbox(this)" />
-      <img src="img/sr/3.jpeg" alt="Baño" onclick="openLightbox(this)" />
-      <img src="img/sr/4.jpeg" alt="Habitación" onclick="openLightbox(this)" />
-      <img src="img/sr/5.jpeg" alt="Habitación" onclick="openLightbox(this)" />
-      <img src="img/sr/6.jpeg" alt="Baño" onclick="openLightbox(this)" />
-      <img src="img/sr/7.jpeg" alt="Habitación" onclick="openLightbox(this)" />
-      <img src="img/sr/8.jpeg" alt="Habitación" onclick="openLightbox(this)" />
+      <img src="img/sr/1.jpeg" alt="Lobby" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/sr/2.jpeg" alt="Pasillo" onclick="openLightbox(this)" class="galeria-img" />
+      <video src="img/sr/5.mp4" alt="Baño" onclick="openLightbox(this)" class="galeria-img" muted loop playsinline></video>
+      <img src="img/sr/4.jpeg" alt="Habitación" onclick="openLightbox(this)" class="galeria-img" />
+      <video src="img/sr/3.mp4" alt="Baño" onclick="openLightbox(this)" class="galeria-img" muted loop playsinline></video>
+      <img src="img/sr/6.jpeg" alt="Baño" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/sr/7.jpeg" alt="Habitación" onclick="openLightbox(this)" class="galeria-img" />
+      <img src="img/sr/8.jpeg" alt="Habitación" onclick="openLightbox(this)" class="galeria-img" />
     </div>
   </section>
 </main>
@@ -149,7 +149,8 @@
 
 <!-- Lightbox para ver imágenes en grande -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <img id="lightbox-img" src="" alt="Instalación en grande" />
+  <img id="lightbox-img" src="" alt="Instalación en grande" style="display:none;" />
+  <video id="lightbox-video" src="" controls style="display:none; max-width:90vw; max-height:80vh; border-radius:18px; background:#222; box-shadow:0 4px 32px #000a;"></video>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
