@@ -38,9 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
           lightboxImg.style.display = 'none';
           lightboxVideo.style.display = 'block';
           lightboxVideo.src = this.src;
-          lightboxVideo.muted = true;
-          lightboxVideo.removeAttribute('controls');
-          lightboxVideo.setAttribute('muted', '');
           lightboxVideo.currentTime = 0;
           lightboxVideo.play();
         } else {
