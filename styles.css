@@ -572,3 +572,7 @@
     display: block;
   }
   
+  video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-mute-button {
+  display: none !important;
+}
